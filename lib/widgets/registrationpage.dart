@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import "package:http/http.dart" as http;
 import 'dart:convert';
 
+import 'package:vandi/widgets/colors.dart';
+
 class Registration extends StatefulWidget {
   const Registration({super.key});
 
@@ -43,7 +45,7 @@ class _RegistrationState extends State<Registration> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.white,
+              color:AppColors.containerColor,
             ),
             height: a.height / 20,
             width: a.width * 0.8,
@@ -54,7 +56,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.person,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "name",
                 border: OutlineInputBorder(
@@ -81,7 +83,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.hourglass_empty,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "Age",
                 border: OutlineInputBorder(
@@ -109,7 +111,7 @@ class _RegistrationState extends State<Registration> {
                 contentPadding: EdgeInsets.all(10.0),
                 prefixIcon: Icon(
                   Icons.location_city,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "Gender",
                 border: OutlineInputBorder(
@@ -147,7 +149,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.email,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "E-mail",
                 border: OutlineInputBorder(
@@ -174,7 +176,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.call,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "Phone number",
                 border: OutlineInputBorder(
@@ -200,7 +202,7 @@ class _RegistrationState extends State<Registration> {
                 contentPadding: EdgeInsets.all(10.0),
                 prefixIcon: Icon(
                   Icons.location_city,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "area",
                 border: OutlineInputBorder(
@@ -236,10 +238,10 @@ class _RegistrationState extends State<Registration> {
                 pincodes = Value;
               },
               decoration: InputDecoration(
-                fillColor: Colors.white,
+                fillColor:AppColors.containerColor,
                 prefixIcon: Icon(
                   Icons.pin,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "Pincode",
                 border: OutlineInputBorder(
@@ -267,7 +269,7 @@ class _RegistrationState extends State<Registration> {
               contentPadding: EdgeInsets.all(10.0),
               prefixIcon: Icon(
                 Icons.more_vert,
-                color: Colors.blue,
+               color:AppColors.bluecolor,
               ),
               labelText: "catagories",
               border: OutlineInputBorder(
@@ -299,7 +301,7 @@ class _RegistrationState extends State<Registration> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.white,
+              color:AppColors.containerColor,
             ),
             height: a.height / 20,
             width: a.width * 0.8,
@@ -310,7 +312,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.person,
-                  color: Colors.blue,
+                  color:AppColors.bluecolor,
                 ),
                 labelText: "username",
                 border: OutlineInputBorder(
@@ -329,7 +331,7 @@ class _RegistrationState extends State<Registration> {
           Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.white,
+                color:AppColors.containerColor,
               ),
               height: a.height / 35,
               width: a.width * 0.6,
@@ -344,7 +346,7 @@ class _RegistrationState extends State<Registration> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.white,
+              color:AppColors.containerColor,
             ),
             height: a.height / 20,
             width: a.width * 0.8,
@@ -359,7 +361,7 @@ class _RegistrationState extends State<Registration> {
                     OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
                 prefixIcon: Icon(
                   Icons.password,
-                  color: Colors.blue,
+                          color:AppColors.bluecolor,
                 ),
                 suffixIcon: GestureDetector(
                   onTap: () {
@@ -388,7 +390,7 @@ print("sajan");
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
-                  colors: [Colors.pink, Colors.blue],
+                  colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight)),
           height: a.height / 20,
@@ -457,7 +459,7 @@ print("sajan");
               child: Center(
                 child: Text(
                   "SUBMIT",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color:AppColors.containerColor),
                 ),
               )),
         ),
@@ -477,7 +479,7 @@ print("sajan");
               child: Center(
                 child: Text(
                   "Sign in",
-                  style: TextStyle(color: Colors.green),
+                  style: TextStyle(color:AppColors.green),
                 ),
               )),
         ),
@@ -490,7 +492,7 @@ print("sajan");
             flexibleSpace: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                      colors: [Colors.pink, Colors.blue],
+                    colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight)),
             ),
@@ -501,7 +503,7 @@ print("sajan");
           body: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                      colors: [Colors.pink, Colors.blue],
+                    colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight)),
               child: SafeArea(
@@ -516,7 +518,7 @@ print("sajan");
                           decoration: BoxDecoration(
                               border: Border.all(width: 1),
                               borderRadius: BorderRadius.circular(20),
-                              color: Colors.white),
+                              color:AppColors.containerColor),
                           child: Form(
                          
                             child: Column(

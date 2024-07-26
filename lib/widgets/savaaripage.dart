@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:vandi/widgets/colors.dart';
 
 import 'package:vandi/widgets/tempo.dart';
 
@@ -144,15 +145,12 @@ class _MypageState extends State<Mypage> {
                 child: Text(
                   "VANDI",
                   style: TextStyle(
-                      color: Colors.white, fontStyle: FontStyle.italic),
+                      color:AppColors.containerColor, fontStyle: FontStyle.italic),
                 ),
               ),
               flexibleSpace: Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                  Colors.blue,
-                  Colors.pink,
-                ], begin: Alignment.centerLeft, end: Alignment.centerRight)),
+                    gradient: LinearGradient(    colors: [AppColors.gradientStartColor, AppColors.gradientEndColor], begin: Alignment.centerLeft, end: Alignment.centerRight)),
               ),
             ),
           ),
@@ -165,47 +163,44 @@ class _MypageState extends State<Mypage> {
                   child: Container(
                 height: 78,
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                  Colors.pink,
-                  Colors.blue,
-                ], begin: Alignment.centerRight, end: Alignment.centerLeft)),
+                    gradient: LinearGradient(    colors: [AppColors.gradientStartColor, AppColors.gradientEndColor], begin: Alignment.centerRight, end: Alignment.centerLeft)),
               )),
               bottom: TabBar(
-                  indicatorColor: Colors.yellow,
+                  indicatorColor:AppColors.yellow,
                   indicatorWeight: 5,
                   tabs: [
                     Tab(
                       icon: Icon(
                         Icons.emoji_transportation,
-                        color: Colors.white,
+                        color:AppColors.containerColor,
                         size: 30,
                       ),
                       child: Text(
                         'vandi',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(  color:AppColors.containerColor,),
                       ),
                     ),
                     Tab(
                       icon: Icon(Icons.people_sharp,
-                          color: Colors.white, size: 30),
+                           color:AppColors.containerColor,),
                       child: Text(
                         'Workers',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(  color:AppColors.containerColor,),
                       ),
                     ),
                     Tab(
-                      icon: Icon(Icons.work, color: Colors.white, size: 30),
+                      icon: Icon(Icons.work,   color:AppColors.containerColor, size: 30),
                       child: Text(
                         'upload',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(  color:AppColors.containerColor,),
                       ),
                     ),
                     Tab(
                       icon: Icon(Icons.work_history,
-                          color: Colors.white, size: 30),
+                            color:AppColors.containerColor, size: 30),
                       child: Text(
                         'Work',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(  color:AppColors.containerColor,),
                       ),
                     )
                   ]),

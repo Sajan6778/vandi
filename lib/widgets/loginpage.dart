@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:vandi/widgets/colors.dart';
 
 class Login1 extends StatefulWidget {
   const Login1({super.key});
@@ -24,7 +25,7 @@ class _LoginState extends State<Login1> {
         child: Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(
-                    colors: [Colors.pink, Colors.blue],
+                    colors:  [AppColors.gradientStartColor, AppColors.gradientEndColor],
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight)),
             child: ListView(children: [
@@ -39,7 +40,7 @@ class _LoginState extends State<Login1> {
                         decoration: BoxDecoration(
                             border: Border.all(width: 1),
                             borderRadius: BorderRadius.circular(20),
-                            color: Color.fromARGB(255, 230, 228, 228)),
+                            color:AppColors.containerColor),
                         child: Form(
                             key: formkey,
                             child: Column(
@@ -78,7 +79,7 @@ class _LoginState extends State<Login1> {
                                         decoration: InputDecoration(
                                             prefixIcon: Icon(
                                               Icons.person,
-                                              color: Colors.blue,
+                                              color:AppColors.bluecolor,
                                             ),
                                             labelText: "Type your username",
                                             border: OutlineInputBorder(
@@ -106,7 +107,7 @@ class _LoginState extends State<Login1> {
                                                   BorderRadius.circular(20)),
                                           prefixIcon: Icon(
                                             Icons.password,
-                                            color: Colors.blue,
+                                            color:AppColors.bluecolor,
                                           ),
                                           suffixIcon: GestureDetector(
                                             onTap: () {
@@ -149,10 +150,7 @@ class _LoginState extends State<Login1> {
                                           borderRadius:
                                               BorderRadius.circular(20),
                                           gradient: LinearGradient(
-                                              colors: [
-                                                Colors.pink,
-                                                Colors.blue
-                                              ],
+                                              colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
                                               begin: Alignment.centerLeft,
                                               end: Alignment.centerRight),
                                           border: Border.all(width: 1)),
@@ -166,12 +164,12 @@ class _LoginState extends State<Login1> {
                                                 "Login",
                                                 style: TextStyle(
                                                     fontSize: 16,
-                                                    color: Colors.white),
+                                                    color:AppColors.containerColor,
                                               ),
                                             )),
                                       ),
                                     )
-                                  ],
+                                 ) ],
                                 ),
                                 SizedBox(
                                   height: 20,
@@ -206,16 +204,16 @@ class _LoginState extends State<Login1> {
                                                 Icons.facebook,
                                                 size: 30,
                                               ),
-                                              color: Colors.blue,
+                                              color:AppColors.bluecolor,
                                             ),
                                             IconButton(
                                                 onPressed: () {},
                                                 icon: Icon(BoxIcons.bxl_google),
-                                                color: Colors.blue),
+                                                color:AppColors.bluecolor,),
                                             IconButton(
                                                 onPressed: () {},
                                                 icon: Icon(EvaIcons.twitter),
-                                                color: Colors.blue),
+                                                 color:AppColors.bluecolor,),
                                           ],
                                         )),
                                       ),

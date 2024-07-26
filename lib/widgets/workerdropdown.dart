@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vandi/widgets/colors.dart';
 
 class Workerdropdown extends StatefulWidget {
   const Workerdropdown({super.key});
@@ -21,7 +22,7 @@ class _DropdownState extends State<Workerdropdown> {
         body: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.pink, Colors.blue],
+                  colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight)),
           child: SafeArea(
@@ -33,7 +34,7 @@ class _DropdownState extends State<Workerdropdown> {
                     decoration: BoxDecoration(
                         border: Border.all(width: 1),
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.white),
+                        color: AppColors.containerColor),
                     child: Column(
                       children: [
                         SizedBox(
@@ -51,7 +52,7 @@ class _DropdownState extends State<Workerdropdown> {
                                   contentPadding: EdgeInsets.all(10.0),
                                   prefixIcon: Icon(
                                     Icons.select_all_outlined,
-                                    color: Colors.blue,
+                                    color:AppColors.bluecolor,
                                   ),
                                   labelText: "Select worker",
                                   border: OutlineInputBorder(
@@ -81,7 +82,7 @@ class _DropdownState extends State<Workerdropdown> {
                               border: Border.all(width: 1),
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
-                                  colors: [Colors.pink, Colors.blue],
+                                  colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
                                   begin: Alignment.centerLeft,
                                   end: Alignment.centerRight)),
                           height: a.height / 20,
@@ -118,7 +119,7 @@ class _DropdownState extends State<Workerdropdown> {
                               child: Center(
                                 child: Text(
                                   "SUBMIT",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle( color: AppColors.containerColor),
                                 ),
                               )),
                         )

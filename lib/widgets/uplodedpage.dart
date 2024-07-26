@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vandi/widgets/colors.dart';
 
 class Uploded extends StatefulWidget {
   final uploaded_controller;
@@ -23,7 +24,7 @@ List uploaded_page = widget.uploaded_page;
       home: Scaffold(
           body: SafeArea(
         child: Container(
-         color: Colors.pink,
+         color: AppColors.pink,
         ),
       )),
     );

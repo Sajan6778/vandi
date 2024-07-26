@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:vandi/widgets/colors.dart';
 
 class Carpenter extends StatefulWidget {
   final List worker_page;
@@ -150,14 +151,14 @@ class _CarpenterState extends State<Carpenter> {
                               Container(
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.blue,
+                                    backgroundColor:AppColors.bluecolor,
                                   ),
                                   onPressed: () {
                                     showModalBottomSheet<void>(
                                       context: context,
                                       builder: (_) {
                                         return Container(
-                                          color: Colors.white,
+                                          color:AppColors.containerColor,
                                           height: MediaQuery.of(context)
                                                   .size
                                                   .height *
@@ -204,8 +205,7 @@ class _CarpenterState extends State<Carpenter> {
                                     'details',
                                     style: TextStyle(
                                         fontSize: 10,
-                                        color:
-                                            Color.fromARGB(255, 255, 255, 255)),
+                                       color:AppColors.containerColor,),
                                   ),
                                 ),
                               ),
