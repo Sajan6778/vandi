@@ -12,7 +12,6 @@ class Registration extends StatefulWidget {
 }
 
 class _RegistrationState extends State<Registration> {
-  
   var names;
   var passwords;
   var ages;
@@ -28,10 +27,8 @@ class _RegistrationState extends State<Registration> {
 
   List<String> country = ["TamilNadu", "Kerala", "Srilanka"];
 
- 
   @override
   Widget build(BuildContext context) {
-    
     print("helloooo");
     var mylist = ["Male", "Female", "Others"];
 
@@ -45,7 +42,7 @@ class _RegistrationState extends State<Registration> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color:AppColors.containerColor,
+              color: AppColors.containerColor,
             ),
             height: a.height / 20,
             width: a.width * 0.8,
@@ -56,7 +53,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.person,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "name",
                 border: OutlineInputBorder(
@@ -83,7 +80,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.hourglass_empty,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "Age",
                 border: OutlineInputBorder(
@@ -111,7 +108,7 @@ class _RegistrationState extends State<Registration> {
                 contentPadding: EdgeInsets.all(10.0),
                 prefixIcon: Icon(
                   Icons.location_city,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "Gender",
                 border: OutlineInputBorder(
@@ -149,7 +146,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.email,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "E-mail",
                 border: OutlineInputBorder(
@@ -164,7 +161,7 @@ class _RegistrationState extends State<Registration> {
         height: 20,
       ),
       Row(
-        mainAxisAlignment: MainAxisAlignment.center,                                                    
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             height: a.height / 20,
@@ -176,7 +173,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.call,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "Phone number",
                 border: OutlineInputBorder(
@@ -202,7 +199,7 @@ class _RegistrationState extends State<Registration> {
                 contentPadding: EdgeInsets.all(10.0),
                 prefixIcon: Icon(
                   Icons.location_city,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "area",
                 border: OutlineInputBorder(
@@ -238,10 +235,10 @@ class _RegistrationState extends State<Registration> {
                 pincodes = Value;
               },
               decoration: InputDecoration(
-                fillColor:AppColors.containerColor,
+                fillColor: AppColors.containerColor,
                 prefixIcon: Icon(
                   Icons.pin,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "Pincode",
                 border: OutlineInputBorder(
@@ -269,7 +266,7 @@ class _RegistrationState extends State<Registration> {
               contentPadding: EdgeInsets.all(10.0),
               prefixIcon: Icon(
                 Icons.more_vert,
-               color:AppColors.bluecolor,
+                color: AppColors.bluecolor,
               ),
               labelText: "catagories",
               border: OutlineInputBorder(
@@ -301,7 +298,7 @@ class _RegistrationState extends State<Registration> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color:AppColors.containerColor,
+              color: AppColors.containerColor,
             ),
             height: a.height / 20,
             width: a.width * 0.8,
@@ -312,7 +309,7 @@ class _RegistrationState extends State<Registration> {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.person,
-                  color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 labelText: "username",
                 border: OutlineInputBorder(
@@ -331,7 +328,7 @@ class _RegistrationState extends State<Registration> {
           Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color:AppColors.containerColor,
+                color: AppColors.containerColor,
               ),
               height: a.height / 35,
               width: a.width * 0.6,
@@ -346,7 +343,7 @@ class _RegistrationState extends State<Registration> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color:AppColors.containerColor,
+              color: AppColors.containerColor,
             ),
             height: a.height / 20,
             width: a.width * 0.8,
@@ -361,7 +358,7 @@ class _RegistrationState extends State<Registration> {
                     OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
                 prefixIcon: Icon(
                   Icons.password,
-                          color:AppColors.bluecolor,
+                  color: AppColors.bluecolor,
                 ),
                 suffixIcon: GestureDetector(
                   onTap: () {
@@ -381,7 +378,7 @@ class _RegistrationState extends State<Registration> {
     fields.add(SizedBox(
       height: 20,
     ));
-print("sajan");
+    print("sajan");
     fields.add(Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -389,10 +386,10 @@ print("sajan");
           decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
-                  colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight)),
+              gradient: LinearGradient(colors: [
+                AppColors.gradientStartColor,
+                AppColors.gradientEndColor
+              ], begin: Alignment.centerLeft, end: Alignment.centerRight)),
           height: a.height / 20,
           width: a.width * 0.4,
           child: TextButton(
@@ -459,7 +456,7 @@ print("sajan");
               child: Center(
                 child: Text(
                   "SUBMIT",
-                  style: TextStyle(color:AppColors.containerColor),
+                  style: TextStyle(color: AppColors.containerColor),
                 ),
               )),
         ),
@@ -479,7 +476,7 @@ print("sajan");
               child: Center(
                 child: Text(
                   "Sign in",
-                  style: TextStyle(color:AppColors.green),
+                  style: TextStyle(color: AppColors.green),
                 ),
               )),
         ),
@@ -491,10 +488,10 @@ print("sajan");
           appBar: AppBar(
             flexibleSpace: Container(
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight)),
+                  gradient: LinearGradient(colors: [
+                AppColors.gradientStartColor,
+                AppColors.gradientEndColor
+              ], begin: Alignment.centerLeft, end: Alignment.centerRight)),
             ),
             title: Center(
               child: Text("REGITRATION FORM"),
@@ -502,10 +499,10 @@ print("sajan");
           ),
           body: Container(
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [AppColors.gradientStartColor, AppColors.gradientEndColor],
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight)),
+                  gradient: LinearGradient(colors: [
+                AppColors.gradientStartColor,
+                AppColors.gradientEndColor
+              ], begin: Alignment.centerLeft, end: Alignment.centerRight)),
               child: SafeArea(
                   child: ListView(
                 children: [
@@ -518,11 +515,12 @@ print("sajan");
                           decoration: BoxDecoration(
                               border: Border.all(width: 1),
                               borderRadius: BorderRadius.circular(20),
-                              color:AppColors.containerColor),
+                              color: AppColors.containerColor),
                           child: Form(
-                         
-                            child: Column(
-                              children: fields,
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: fields,
+                              ),
                             ),
                           )),
                     ],
@@ -532,4 +530,3 @@ print("sajan");
     );
   }
 }
-

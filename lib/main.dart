@@ -11,7 +11,7 @@ import 'package:vandi/widgets/training.dart';
 // import 'package:vandi/widgets/training1.dart';
 // import "package:vandi/firebase_options.dart";
 
-void main() async {
+void main(){
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
